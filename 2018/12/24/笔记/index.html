@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="邹翼的博客">
 <meta property="og:description" content="hexo +github 搭建个人博客 node环境配置linux操作系统1.浏览器打开 https://nodejs.org ，下载10.14.2版本的压缩2.默认下载到/root/下载 路径下，解压：1tar -xf node-v10.14.2-linux-x64.tar 3.创建node和npm的软链接1ln -s /root/下载/node-v10.14.2-linux-x64/bin/n">
 <meta property="og:locale" content="zh-CN.yml">
-<meta property="og:updated_time" content="2018-12-26T08:04:15.210Z">
+<meta property="og:updated_time" content="2018-12-26T08:29:49.332Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="笔记">
 <meta name="twitter:description" content="hexo +github 搭建个人博客 node环境配置linux操作系统1.浏览器打开 https://nodejs.org ，下载10.14.2版本的压缩2.默认下载到/root/下载 路径下，解压：1tar -xf node-v10.14.2-linux-x64.tar 3.创建node和npm的软链接1ln -s /root/下载/node-v10.14.2-linux-x64/bin/n">
@@ -207,10 +207,16 @@
 <p><a href="http://www.chouchouyi.com" target="_blank" rel="noopener">www.chouchouyi.com</a><br><a href="http://www.zouyi888888.top" target="_blank" rel="noopener">www.zouyi888888.top</a><br><a href="http://easyicon.net" target="_blank" rel="noopener">http://easyicon.net</a></p>
 </li>
 </ol>
+<h1 id="备份blog到github"><a href="#备份blog到github" class="headerlink" title="备份blog到github"></a>备份blog到github</h1><ol>
+<li><p>添加文件到暂存区<br>git add .<br>2.添加提交说明<br>git commit -m”随便写”<br>3.上传<br>git push</p>
+<p>强制本地代码更新到与github同步<br>git fetch –all<br>git reset –hard origin/master<br>git pull</p>
+<p>主题下载以后，第一时间删除主题根目录内的.git文件夹</p>
+</li>
+</ol>
 
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2018年12月26日 16:04</p>
+        <p>最后更新： 2018年12月26日 16:29</p>
         <p>原始链接： <a class="post-url" href="/2018/12/24/笔记/" title="笔记">http://chouchouyi.com/2018/12/24/笔记/</a></p>
         <footer>
             <a href="http://chouchouyi.com">
@@ -332,7 +338,7 @@
 
     <aside class="post-toc-pos post-toc-top" id="post-toc">
         <nav class="post-toc-wrap">
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#node环境配置"><span class="post-toc-text">node环境配置</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#linux操作系统"><span class="post-toc-text">linux操作系统</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#windows环境下"><span class="post-toc-text">windows环境下</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#项目搭建"><span class="post-toc-text">项目搭建</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#初始化博客项目"><span class="post-toc-text">初始化博客项目</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#进入blog目录"><span class="post-toc-text">进入blog目录</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#安装项目依赖包"><span class="post-toc-text">安装项目依赖包</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#启动项目服务"><span class="post-toc-text">启动项目服务</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#预览项目"><span class="post-toc-text">预览项目</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#编译代码"><span class="post-toc-text">编译代码</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#推送"><span class="post-toc-text">推送</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#清理缓存"><span class="post-toc-text">清理缓存</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#域名绑定"><span class="post-toc-text">域名绑定</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#域名解析"><span class="post-toc-text">域名解析</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#创建CNAME"><span class="post-toc-text">创建CNAME</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#回家之后"><span class="post-toc-text">回家之后</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#node环境配置"><span class="post-toc-text">node环境配置</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#linux操作系统"><span class="post-toc-text">linux操作系统</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#windows环境下"><span class="post-toc-text">windows环境下</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#项目搭建"><span class="post-toc-text">项目搭建</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#初始化博客项目"><span class="post-toc-text">初始化博客项目</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#进入blog目录"><span class="post-toc-text">进入blog目录</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#安装项目依赖包"><span class="post-toc-text">安装项目依赖包</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#启动项目服务"><span class="post-toc-text">启动项目服务</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#预览项目"><span class="post-toc-text">预览项目</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#编译代码"><span class="post-toc-text">编译代码</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#推送"><span class="post-toc-text">推送</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#清理缓存"><span class="post-toc-text">清理缓存</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#域名绑定"><span class="post-toc-text">域名绑定</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#域名解析"><span class="post-toc-text">域名解析</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#创建CNAME"><span class="post-toc-text">创建CNAME</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#回家之后"><span class="post-toc-text">回家之后</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#备份blog到github"><span class="post-toc-text">备份blog到github</span></a></li></ol>
         </nav>
     </aside>
     
